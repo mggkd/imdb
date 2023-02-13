@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #000;
+}
+.movieCard{
+    height: 500px;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+.movieCard img{
+    height: 100%;
+    object-fit: cover;
+}
+.movieCard figcaption{
+    position: absolute;
+    bottom : 0;
+    color: black;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0 0 10px;
+    font-weight: 400;
+}
+
+.movieCard .overview{
+    position: absolute;
+    bottom: -1200%;
+    background: white;
+    color: black;
+    left : 0;
+    transition: all .2s ease-in-out;
+    padding: 20px;
+};
+
+.overview{
+    width: 100%;
+}
+.movieCard:hover .overview{
+    bottom: 0;
+}
+.movieCard h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
